@@ -1,6 +1,12 @@
 ---
 - hosts: localhost
+  # pre_tasks:
+  #   - name: pacman -Syu
+  #     pacman:
+  #       update_cache: yes
+  #       upgrade: yes
   tasks:
     - include_tasks: tasks/git-config.yml
     - include_tasks: tasks/rust.yml
     - include_tasks: tasks/paru.yml
+    - include_tasks: tasks/cli-utilities.yml

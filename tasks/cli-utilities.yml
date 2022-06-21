@@ -1,0 +1,10 @@
+- name: Install bat, lazygit, lsd
+  become: true
+  pacman:
+    name:
+      - bat
+      - lazygit
+      - lsd
+      - nerd-fonts-fira-code
+    executable: paru
+    state: present
