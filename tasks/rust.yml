@@ -1,0 +1,6 @@
+- name: Install rustup
+  package:
+    name: rustup
+
+- name: Configure to use stable branch
+  shell: rustup default stable
